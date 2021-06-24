@@ -37,6 +37,7 @@ The goal of this project is to combine transaction, demographic, and offer data 
  10. DecisionTreeClassifier
  11. KNeighborsClassifier
  12. RandomForestRegressor
+ 13. GridSearchCV
   
  **Dataset overview:**
 The data is contained in three files: <br>
@@ -97,14 +98,15 @@ value - (dict of strings) - either an offer id or transaction amount depending o
   
  **Model**:
   Using customer, transaction and offer data, engineered features and built models.<br>
+  Built 3 models - Decision Tree Classifier model, Random Forest Classifier Model and KNeighbors Classifier Model.<br>
   Evaluated models using the Accuracy metric. <br>
   Accuracy metric is selected as it works best for classification models. <br>
-  Chose Decision tree as the best performing model<br>
-  Also documented future improvemnets as well<br>
+  As part of model refienment,performed hyperparameter tuning using Gridsearch technique
+  analyzed the prediction accuracy scores from all the models.
+  Chose Decision tree as the best performing model based on prediction accuracy<br>
   <br>
  **Future improvements**<br>
   To employ additional Model tuning,more feature engineering to identify features can be implemeted in future to improve the model <br>
-  This model can also be fine tuned using a Grid Search, for trying different types of kernels.<br>
   <br>
  **Conclusion**<br>
    As part of the project, am able to accomplish below tasks.<br>
@@ -117,10 +119,15 @@ value - (dict of strings) - either an offer id or transaction amount depending o
       3. Data modeling: <pre>
              a. Build model to predict customer response to offer<br>
              b. used accuracy as evaluation metric to determine best model<br>
-             c. selected Decision tree as the best model for our exercise as it has best accuracy </pre><br>
+             c. Decision Tree Classifier, Random Forest Classifier and KNeighbors Classifier models have been considered for this project.<br>
+	     d. after initial scores,as part of model refinement, we employed GridSearch technique through which we can come to know the best parameters for a model.<br>
+	     e. Decisiontree has the best prediction accuracy on validation set data compared to other models.<br> 
+	        Hence, We can use Decision tree to predict customer response for the offer. <br>
+	     f. Also, Reward and Time are the most important features for the model.   
+	     </pre><br>
 <br>
   **Results** <br>
-   Main observations on the dataset are documented [here](https://kishorek29.medium.com/starbucks-capstone-challenge-fd84609dd74f)<br>
+   Detailed observations on the Project are documented [here](https://kishorek29.medium.com/starbucks-capstone-challenge-fd84609dd74f)<br>
 
 
 
